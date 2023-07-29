@@ -1,8 +1,5 @@
-import 'package:admob_flutter/admob_flutter.dart';
-import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -18,20 +15,10 @@ class HomePage extends StatefulWidget {
 
 class HomePageState extends State<HomePage> {
   List<Widget> storyWidgetList = [];
-  late AdmobInterstitial interstitialAd;
   var counter = 0;
   @override
   void initState() {
     super.initState();
-
-    interstitialAd = AdmobInterstitial(
-      adUnitId: "ca-app-pub-8937226909637905/7694991686",
-      listener: (AdmobAdEvent event, Map<String, dynamic>? args) {
-        if (event == AdmobAdEvent.closed) interstitialAd.load();
-      },
-    );
-
-    interstitialAd.load();
   }
 
   @override
@@ -115,14 +102,6 @@ class HomePageState extends State<HomePage> {
     return InkWell(
       onTap: () async {
         counter++;
-
-        final isLoaded = await interstitialAd.isLoaded;
-        print(counter);
-        if (isLoaded == true && counter % 2 == 0) {
-          interstitialAd.show();
-        } else {
-          print('Interstitial ad is still loading...');
-        }
 
         Navigator.push(
             context,
