@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class StoryPage extends StatefulWidget {
-  String storyName;
-  String storyImg;
-  String storyText;
-  StoryPage(
+  final String storyName;
+  final String storyImg;
+  final String storyText;
+  const StoryPage(
       {super.key,
       required this.storyImg,
       required this.storyName,
@@ -18,7 +17,6 @@ class _StoryPageState extends State<StoryPage> {
   @override
   Widget build(BuildContext context) {
     Size screenSize = MediaQuery.of(context).size;
-    // TODO: implement build
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(

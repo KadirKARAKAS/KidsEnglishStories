@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:flutterdeneme1/screens/storyPage.dart';
+import 'package:flutterdeneme1/screens/story_page.dart';
 
 //ca-app-pub-8937226909637905/7694991686
 class HomePage extends StatefulWidget {
