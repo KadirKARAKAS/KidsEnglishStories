@@ -33,6 +33,35 @@
           ]
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269836485912:android:5d54fddf4c758f79cc8a6d",
+        "android_client_info": {
+          "package_name": "com.kkk.mystories"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "269836485912-pgp9gt10um6adf2nrc3iusa054pdbokt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgE2lp7zPltNnttJdu9FCGTFe7Ul6BaXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "269836485912-pgp9gt10um6adf2nrc3iusa054pdbokt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
     }
   ],
   "configuration_version": "1"
