@@ -1,4 +1,4 @@
-package com.kkk.mystories
+package com.englishstories.mystories
 
 import io.flutter.embedding.android.FlutterActivity
 
